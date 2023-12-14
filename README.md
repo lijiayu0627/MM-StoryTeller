@@ -1,4 +1,4 @@
-### MM Storyteller -  a  multi-modal video captioner based on CLIP and GPT-2
+### MM Storyteller -  A  multi-modal video captioner based on CLIP and GPT-2
 
 This project builds a multi-modal model to narrate the story in the videos with natural language. It is based on [CLIP Captioning](https://arxiv.org/pdf/2111.09734.pdf), which bridges the embedding space of CLIP and generative language model to generate captions for images. In this project, I develop novel methods to generate captions for videos through modeling the image sequences with Transformer.  I evaluate the methods on the [YouTubeClips dataset](https://www.cs.utexas.edu/users/ml/clamp/videoDescription/).
 
