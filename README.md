@@ -21,7 +21,7 @@ This project builds a multi-modal model to narrate the story in the videos with 
 
 The model first convert the input video into a sequence of images. Then it utilize CLIP vision encoder to represent images. It trains a projection module to align image embeddings to the embedding space of GPT-2 to serve as the prefix for caption generation. The framework is shown as the following image.
 
-()
+![image](https://github.com/lijiayu0627/MM-StoryTeller/blob/main/images/framework.png)
 
 #### Video Preprocessing
 
@@ -43,8 +43,8 @@ I evaluate the proposed video caption model with the following metrics: BLEU-4, 
 
 | Video                | 1    | 2    | 3    |
 | ----------------------   | ----------- |----------- |----------- |
-| Sample frame         | () | () | () |
-| Original Video       | [video 1]() | [video 2]() | [video 3]() |
+| Sample frame         | ![image](https://github.com/lijiayu0627/MM-StoryTeller/blob/main/images/e1.png) | ![image](https://github.com/lijiayu0627/MM-StoryTeller/blob/main/images/e2.png) | ![image](https://github.com/lijiayu0627/MM-StoryTeller/blob/main/images/e3.png) |
+| Original Video       | [video 1](https://github.com/lijiayu0627/MM-StoryTeller/blob/main/images/e1.avi) | [video 2](https://github.com/lijiayu0627/MM-StoryTeller/blob/main/images/e2.avi) | [video 3](https://github.com/lijiayu0627/MM-StoryTeller/blob/main/images/e3.avi) |
 | Generated Caption | a small cat jumps into a bag | people are traveling on a bus | a person is cutting a carrot |
 
 
