@@ -21,8 +21,6 @@ This project builds a multi-modal model to narrate the story in the videos with 
 
 The model first convert the input video into a sequence of images. Then it utilize CLIP vision encoder to represent images. It trains a projection module to align image embeddings to the embedding space of GPT-2 to serve as the prefix for caption generation. The framework is shown as the following image.
 
-![image](https://github.com/lijiayu0627/MM-StoryTeller/blob/main/images/framework.png)
-
 #### Video Preprocessing
 
 Given an input video, the model converts it into image frames with a fixed sampling frequency. Then it encodes the images with the CLIP vision encoder. I propose two methods to generate the video embedding from image embeddings. The first way is to utilize the mean pooling to get an overall embedding of the video. The second way is to utilize a Transformer model to project the  $n\times m$embeedings of the image sequence into a $1\times m$ vector.
